@@ -278,11 +278,31 @@ img {
   line-height: 1.5;
 }
 
+/*-------------------------SECTION 5-----------------------*/
+
+.customers-section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-bottom: 72px;
+}
 /*-------------------------FOOTER------------------------*/
 .footer {
   background: var(--dark-color);
   padding: 100px 0;
 }
+.footer-container {
+  display: flex;
+}
+
 .footer-text {
   line-height: 1.5;
   color: var(--light);
@@ -296,6 +316,15 @@ img {
   color: var(--light);
   display: inline-block;
 }
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+}
+
 /*===================================PORTFOLIO======================================*/
 .button-section {
   padding-top: 96px;
