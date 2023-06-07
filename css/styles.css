@@ -6,6 +6,7 @@
   --light: #f4f4fd;
   --accent: #e7e9fc;
   --pressed-state: #404bbf;
+  --light-slate: #8e8f99;
 }
 
 body {
@@ -94,6 +95,23 @@ img {
   display: block;
   padding: 24px 0;
 }
+.active {
+  position: relative;
+  display: inline-block;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  top: 68px;
+
+  background: var(--pressed-state);
+  border-radius: 2px;
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--pressed-state);
@@ -123,14 +141,22 @@ img {
 
 /*-------------------------SECTION 1------------------------*/
 .hero-container {
-  background: var(--dark-color);
+  /* background: var(--dark-color); */
 }
-
 .hero {
-  background: var(--dark-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  /* background: no-repeat; */
+  background-position: center;
+  background-size: cover;
 }
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
@@ -186,6 +212,15 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.advantages-icon-fon {
+  background-color: var(--light);
+  padding: 24px 100px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.advantages-icon-item {
 }
 
 .advantages-container {
@@ -276,6 +311,33 @@ img {
 }
 .team-member-role {
   line-height: 1.5;
+  margin-bottom: 8px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.team-social-item {
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.team-social-icom {
+  fill: var(--light);
 }
 
 /*-------------------------SECTION 5-----------------------*/
@@ -294,6 +356,27 @@ img {
   color: var(--dark-color);
   margin-bottom: 72px;
 }
+
+.customer-list {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+
+.customer-item {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+}
+.customer-link {
+  /* color: var(--light-slate); */
+}
+
+.customer-icom {
+  fill: var(--light-slate);
+}
+
 /*-------------------------FOOTER------------------------*/
 .footer {
   background: var(--dark-color);
@@ -317,12 +400,40 @@ img {
   display: inline-block;
 }
 
+.footer-social-container {
+}
 .footer-social-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-background);
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.footer-social-item {
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-social-icom {
+  fill: var(--light);
 }
 
 /*===================================PORTFOLIO======================================*/
