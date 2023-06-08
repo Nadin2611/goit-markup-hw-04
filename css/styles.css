@@ -298,6 +298,8 @@ img {
   background: var(--white-background);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-member-name {
@@ -390,7 +392,14 @@ img {
   line-height: 1.5;
   color: var(--light);
   max-width: 264px;
+  margin-left: 0;
 }
+
+.footer-logo-container {
+  /* max-width: 264px; */
+  /* margin-right: 120px; */
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -401,6 +410,8 @@ img {
 }
 
 .footer-social-container {
+  padding-left: 0;
+  padding-right: 0;
 }
 .footer-social-title {
   font-weight: 500;
@@ -408,11 +419,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-background);
+  margin-bottom: 16px;
 }
+
 .footer-social-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding: 0px;
   gap: 24px;
 }
@@ -470,6 +483,8 @@ img {
   background-color: var(--pressed-state);
   color: var(--white-background);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .services-list {
   display: flex;
@@ -481,6 +496,13 @@ img {
 }
 .services-item {
 }
+
+.services-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+box-shadow: X0 Y1 B6 S0 var(--dark-color) 8%;
+
 .services-category {
 }
 .services-title {
