@@ -401,8 +401,6 @@ img {
 .customers-item {
   width: calc((100% - 120px) / 6);
   height: 88px;
-  border: 1px solid var(--light-slate);
-  border-radius: 4px;
 }
 
 .customers-link {
