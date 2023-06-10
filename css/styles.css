@@ -42,7 +42,9 @@ h6 {
 .hero-container {
 }
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .list {
@@ -103,6 +105,7 @@ img {
 .active {
   position: relative;
   display: inline-block;
+  color: var(--pressed-state);
 }
 
 .active::after {
@@ -114,6 +117,7 @@ img {
   top: 68px;
   background: var(--pressed-state);
   border-radius: 2px;
+  bottom: -1px;
 }
 
 .nav-link:hover,
